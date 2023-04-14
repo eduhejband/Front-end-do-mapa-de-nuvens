@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="300"> <!-- Atualiza a página a cada 5 minutos (300 segundos) -->
+	<title>Mapa Meteorológico</title>
+	<style>
+			body {
+		background-color: #f2f2f2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+	}
+
+	h1 {
+		color: #666;
+		font-size: 24px;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	p {
+		margin: 0;
+		padding: 5px;
+		font-size: 14px;
+		font-style: italic;
+		color: #000000;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		height: auto;
+		max-width: 60%;
+		padding: 20px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		background-color: #d6d6d6;
+	}
+
+	.legend {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.legend p {
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	@media only screen and (min-width: 768px) {
+		h1 {
+			font-size: 36px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<h1>Mapa de Nuvens</h1>
+    <p style="text-align: center; font-weight: bold;">Imagem de maior enfoque na região do Nordeste brasileiro, gerada pela NOAA (National Oceanic and Atmospheric Administration) com dados do satélite GOES-16 em tempo real. Créditos: NOAA/NASA.</p>
+	<img src="https://backnewgeooo.herokuapp.com/recorte" alt="Imagem">
+	<div class="legend">
+        <p style="text-align: center; font-weight: bold;">Este é um guia de cores que indica a temperatura da nuvem em graus Celsius. A escala de cores varia de preto (representando as temperaturas mais frias, que geralmente indicam nuvens mais altas e mais espessas) a branco (representando as temperaturas mais quentes, que geralmente indicam nuvens mais baixas e menos densas).</p>
+        <p style="text-align: center; font-weight: bold;">De forma geral, nuvens mais altas e espessas estão associadas a uma maior probabilidade de tempestades e outras condições meteorológicas adversas. Portanto, áreas do mapa com cores mais quentes (branco, amarelo, laranja, vermelho) podem indicar uma maior probabilidade de tempestades, enquanto áreas com cores mais frias (verde, azul, roxo) indicam que as nuvens são mais baixas e menos densas, e portanto, menos propensas a causar tempestades.</p>
+        <p style="text-align: center; font-weight: bold; margin-bottom: 100px;">No entanto, é importante ressaltar que a interpretação das cores do mapa e sua relação com a probabilidade de tempestades e outras condições meteorológicas adversas podem variar de acordo com o contexto local e outros fatores meteorológicos em jogo. Portanto, a análise do mapa deve ser feita com cautela e sempre levando em conta outras informações e fontes de dados disponíveis.</p>
+		<p style="text-align: center; font-weight: bold; margin-bottom: 100px;">Para mais informações acesse o <a href="https://www.star.nesdis.noaa.gov/GOES/documents/SandwichProduct.pdf" target="_blank">guia oficial da NOAA</a>.</p>
+
+	</div>
+</body>
+</html>
